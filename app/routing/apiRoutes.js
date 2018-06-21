@@ -1,4 +1,5 @@
 var friends = require("./../data/friends");
+var tvFriends = require("./../data/tv-friends");
 
 module.exports = (function(app) {
     
@@ -6,33 +7,42 @@ module.exports = (function(app) {
          res.json(friends);
     });
 
+    app.get('/api/tv-friends', function (req, res) {
+        res.json(tvFriends);
+   });
+
     app.post("/api/friends", function(req, res) {  
          var newFriend = req.body;
          var currentUser = newFriend.scores;
-         var minDiff = 100;
-         var minIndex = -1;
-         console.log("me:"+currentUser);
-          for(var i = 0; i<friends.length; i++){
-            var totalDiff = 0;
-              var otherUser = friends[i].scores;
-              console.log("other:"+otherUser);
-              for(var j = 0; j<otherUser.length; j++){
-                  totalDiff+=Math.abs(otherUser[j]-currentUser[j]);
-              }
-              console.log(totalDiff);
-              if(totalDiff < minDiff){
-                  minDiff = totalDiff;
-                  minIndex = i;
-              }
-          } 
-
-
-          console.log(minDiff, minIndex);
-          friends.push(req.body);
-          res.json(friends[minIndex]);
+        
+         var friend = findMatch(friends, currentUser);
+         var tvFriend = findMatch(tvFriends, currentUser);
+         var friendArray = [tvFriend, friend];
+          friends.push(newFriend);
+          res.json(friendArray);
       });
     
 });
+function findMatch(frnd, currentUser){
+    var minDiff = 100;
+    var minIndex = -1;
+    console.log("me:"+currentUser);
+for(var i = 0; i<frnd.length; i++){
+    var totalDiff = 0;
+      var otherUser = frnd[i].scores;
+      console.log("other:"+otherUser);
+      for(var j = 0; j<otherUser.length; j++){
+          totalDiff+=Math.abs(otherUser[j]-currentUser[j]);
+      }
+      console.log(totalDiff);
+      if(totalDiff < minDiff){
+          minDiff = totalDiff;
+          minIndex = i;
+      }
+  }
+  return frnd[minIndex];
+} 
+
 
 
 // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.

@@ -11,9 +11,10 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/styles.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  
 </head>
 
-<body>
+<body class="survey">
     <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" href="\"><i class="fas fa-home"></i></a>
@@ -169,7 +170,7 @@
                         </select>
                     </div> 
           
-                  <button type="submit" class="btn btn-primary submit">Submit</button>
+                  <button type="submit" class="btn btn-primary submit">Let's Find the Match!</button>
               </form>
           </div>
         </div>
@@ -243,10 +244,14 @@
     $.post("/api/friends", newFriend,
       function(data) {
         console.log(data);
+        var friend = data[1];
+        var tvFriend = data[0];
         var body = $(".modal-body");
-        var name =$("<div>").html(data.name);
-        var img =$("<img class='friendImg img-fluid'>").attr("src",data.photo);
-        body.append(name, img);
+        var character =$("<div>").html(tvFriend.name);
+        var charImg =$("<img class='friendImg img-fluid'>").attr("src",tvFriend.photo);
+        var name =$("<div>").html(friend.name);
+        var img =$("<img class='friendImg img-fluid'>").attr("src",friend.photo);
+        body.append(character, charImg, name, img);
         //show modal pop-up
         // alert(data);
         $("#name").val("");

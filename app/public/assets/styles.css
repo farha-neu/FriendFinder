@@ -5,6 +5,16 @@ body.home{
     background-size: cover;
 }
 
+body.survey{
+    /* background-image: url("http://images2.fanpop.com/image/photos/11800000/Drawing-friends-11849911-1100-785.jpg"); */
+}
+
+label{
+    font-family: 'Courgette', cursive;
+    font-size:18px;
+}
+
+
 .jumbotron{
     margin-top:170px;
     background-color: rgb(75,0,130,0.9);
@@ -27,4 +37,6 @@ body.home{
 
 .card{
     margin-top:20px;
+   
 }
+

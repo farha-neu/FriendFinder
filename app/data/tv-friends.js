@@ -1,0 +1,51 @@
+var tvFriends = [{
+    "name":"Monica",
+    "photo":"https://pbs.twimg.com/profile_images/459181888067092480/4UU06Zxj.jpeg",
+    "scores":[
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        5,
+        4,
+        1
+      ]
+  },
+  {
+    "name":"Joey",
+    "photo":"https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE1XFxcLzEwXFxcLzI5MTExMzEyXFxcL0pvZXkuanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_dj01XCJ9IiwiaGFzaCI6IjQ5OGEyZTllYjQ3NWYyMDczMzE5NTg3ZjQ5OWZhMjYxZjg0YzNlZDYifQ==/joey.jpg",
+    "scores":[
+        3,
+        1,
+        3,
+        4,
+        1,
+        2,
+        2,
+        4,
+        4,
+        1
+      ]
+  },
+  {
+    "name":"Chandler",
+    "photo":"https://pmctvline2.files.wordpress.com/2017/05/friends-chandler-video.jpg?w=620",
+    "scores":[
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+  },
+];
+
+  module.exports = tvFriends;
