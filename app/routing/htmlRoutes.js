@@ -1,4 +1,5 @@
 var path = require("path");
+var express = require("express");
 
 module.exports = (function(app) {
     app.get('/', function (req, res) {
@@ -8,9 +9,8 @@ module.exports = (function(app) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
-    app.get('/styles.css', function (req, res) {
-        res.sendFile(path.join(__dirname, "../assets/styles.css"));
-    });
+    app.use('/', express.static(path.join(__dirname,'../public/assets')));
+   
 });
 
 // A GET Route to /survey which should display the survey page.

@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- Latest compiled and minified CSS & JS -->
+    <title>Friend Finder</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-    <h1>HOME</h1>
-    <a href="/survey">Start survey</a>
+<body class="home">
+
+ <div class="container">
+
+        <div class="jumbotron">
+                <h1 class="display-4"><img src="/images/friends.png"/> F.R.I.E.N.D FINDER!</h1>
+                <p class="lead">Are you a FRIEND TV Show's Fan? Answer a few basic questions.<br> Then find the FRIEND's character and FRIEND's fan with the greatest compatability!</p>
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg survey-button" href="/survey" role="button"><i class="fab fa-wpforms"></i> Find compatible Friend's Character and Fan</a>
+                </p>
+        </div>
+        
+  </div> <!--container ends -->
+   
+    <!-- <a href="/survey">Start survey</a>
 
     
 
-
-
-
-
-
     <footer>
         <a href = "/api/friends">API Friend's List</a>
-    </footer>
+    </footer> -->
 </body>
 </html>

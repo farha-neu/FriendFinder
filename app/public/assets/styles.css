@@ -1,0 +1,30 @@
+body.home{
+    background: red;
+    background-image: url("images/images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron{
+    margin-top:170px;
+    background-color: rgb(75,0,130,0.9);
+    color: white;
+}
+
+.survey-button{
+    margin-bottom: 5px;
+}
+
+.nav{
+    background: rgb(75,0,130);
+    padding: 10px;
+}
+
+.fa-home{
+   font-size:30px;
+   color: white;
+}
+
+.card{
+    margin-top:20px;
+}
