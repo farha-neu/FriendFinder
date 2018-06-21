@@ -8,6 +8,9 @@ module.exports = (function(app) {
         res.sendFile(path.join(__dirname, "../public/survey.html"));
     });
 
+    app.get('/styles.css', function (req, res) {
+        res.sendFile(path.join(__dirname, "../assets/styles.css"));
+    });
 });
 
 // A GET Route to /survey which should display the survey page.
