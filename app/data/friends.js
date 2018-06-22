@@ -1,6 +1,6 @@
 var friends = [{
-    "name":"Sarah",
-    "photo":"https://images.unsplash.com/photo-1517480625158-292a09aee755?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=0de1c658b5b91706145bce103295838a",
+    "name":"Sarah Ahmed",
+    "photo":"https://images.unsplash.com/photo-1465982686662-fc36536ba3ad?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=8c05f204130869b7752e99c3f84fedae",
     "scores":[
         5,
         1,

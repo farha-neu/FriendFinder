@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/styles.css"> 
     <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
 </head>
 
 <body class="survey">
@@ -19,7 +20,7 @@
         <li class="nav-item">
           <a class="nav-link active" href="\"><i class="fas fa-home"></i></a>
         </li>
-        <span class="tag">F.R.I.E.N.D FINDER</span>
+        <span class="tag"><img src="images/friends.png"/> F.R.I.E.N.D FINDER</span>
 
     </ul>
 
@@ -42,7 +43,7 @@
                     <br>
                     <hr>
                    
-                    <h5>Question 1</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 1</h5>
                     
                     <div class="form-group">
                         <label for="q1">Being attractive is very important to me.</label>
@@ -56,9 +57,9 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 2</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 2</h5>
                     <div class="form-group">
-                        <label for="q2">To win a nobel prize is my ultimate dream.</label>
+                        <label for="q2">I sometimes feel a little isolated because of my intelligence </label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q2">
                           <option value="default" selected disabled>Choose your option</option>
                           <option value="1">1 (Strongly Disagree)</option>
@@ -69,7 +70,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 3</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 3</h5>
                     <div class="form-group">
                         <label for="q2">I am always loyal to my friends.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q3">
@@ -82,7 +83,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 4</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 4</h5>
                     <div class="form-group">
                         <label for="q4">I am the one in control on most occasions.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q4">
@@ -95,7 +96,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 5</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 5</h5>
                     <div class="form-group">
                         <label for="q5">When it comes to my career or school, I strive to be the best.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q5">
@@ -108,7 +109,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 6</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 6</h5>
                     <div class="form-group">
                         <label for="q6">I have great ambitions.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q6">
@@ -121,7 +122,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 7</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 7</h5>
                     <div class="form-group">
                         <label for="q7">I feel uneasy when things are not clean and organized.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q7">
@@ -134,7 +135,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 8</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 8</h5>
                     <div class="form-group">
                         <label for="q8">I love being the center of attention.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q8">
@@ -147,7 +148,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 9</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 9</h5>
                     <div class="form-group">
                         <label for="q9">I am an eternal optimist and not afraid to stand up for what I believe in.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q9">
@@ -160,7 +161,7 @@
                         </select>
                     </div> 
                     <hr>
-                    <h5>Question 10</h5>
+                    <h5><i class="fas fa-question-circle"></i> Question 10</h5>
                     <div class="form-group">
                         <label for="q10">I have the ability to make a situation way less awkward by using my natural wit.</label>
                         <select class="form-control col-md-6 offset-md-3 text-center" id="q10">
@@ -173,7 +174,7 @@
                         </select>
                     </div> 
           
-                  <button type="submit" class="btn btn-primary submit">Let's Find the Match!</button>
+                  <button type="submit" class="btn btn-basic submit">Let's Find the Match!</button>
              
               </form>
           </div>
@@ -185,13 +186,13 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Best Matches!</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                
+              <div class="modal-body row">
+                 <!--modal content-->
               </div>
               <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -205,61 +206,76 @@
 
 <script type="text/javascript">
 
- $(".submit").on("click", function(event) {
-    event.preventDefault();
-
-    var score=[];
-    for(var i =1; i<=10; i++){
-      score.push($("#q"+i).val());
-    }
-
-    // Here we grab the form elements
-    var newFriend = {
-      name: $("#name").val().trim(),
-      photo: $("#photo").val().trim(),
-      scores: score
-    };
-    var blank = false;
-    for(var key in newFriend){
-      if(key === "scores"){
-        var score = newFriend[key];
-        if(score.indexOf(null)>-1){
-          blank = true;
-          alert("Please fill out each field before submitting");
-          break;
-        }
-      }
-      else if(newFriend[key] ===""){
-        blank = true;
-        alert("Please fill out each field before submitting");
-        break;
-      }
-    }
-
-   if(blank === false){
-     $(".modal-body").empty();
-     $(".submit").attr("data-toggle","modal");
-     $(".submit").attr("data-target","#exampleModal");
-  
-    $.post("/api/friends", newFriend,
-      function(data) {
-        console.log(data);
-        var friend = data[1];
-        var tvFriend = data[0];
-        var body = $(".modal-body");
-        var character =$("<div>").html(tvFriend.name);
-        var charImg =$("<img class='friendImg img-fluid'>").attr("src",tvFriend.photo);
-        var name =$("<div>").html(friend.name);
-        var img =$("<img class='friendImg img-fluid'>").attr("src",friend.photo);
-        body.append(character, charImg, name, img);
-        $("#name").val("");
-        $("#photo").val("");
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+        
+        //pushing score in an array
+        var score=[];
         for(var i =1; i<=10; i++){
-           $("#q"+i).val("");
+          score.push($("#q"+i).val());
         }
 
-      });
-   }
+        // Here we grab the form elements
+        var newFriend = {
+          name: $("#name").val().trim(),
+          photo: $("#photo").val().trim(),
+          scores: score
+        };
+
+        //check for empty fields
+        var blank = false;
+        for(var key in newFriend){
+          if(key === "scores"){
+            var score = newFriend[key];
+            if(score.indexOf(null)>-1){
+              blank = true;
+              alert("Please fill out each field before submitting");
+              break;
+            }
+          }
+          else if(newFriend[key] ===""){
+            blank = true;
+            alert("Please fill out each field before submitting");
+            break;
+          }
+        }
+
+      if(blank === false){
+        $(".modal-body").empty();
+        $(".submit").attr("data-toggle","modal");
+        $(".submit").attr("data-target","#exampleModal");
+      
+        $.post("/api/friends", newFriend,
+          function(data) {
+            var tvFriend = data[0];
+            var fanFriend = data[1];
+            var body = $(".modal-body");
+
+            var character =$("<div class='col-md-12 text-center'>");
+            var tvtitle = $("<p class='title'>").html("Matching Friends character");
+            var tvname = $("<p class='name'>").html(tvFriend.name);
+            var charImg =$("<img class='rounded img-fluid proImg'>").attr("src",tvFriend.photo);
+            charImg.attr("alt","image "+tvFriend.name);
+            character.append(tvtitle,tvname,charImg);
+        
+            var fan =$("<div class='col-md-12 text-center'>");
+            var title = $("<p class='title titlefan'>").html("Matching Friends fan");
+            var name = $("<p class='name'>").html(fanFriend.name);
+            var img =$("<img class='rounded img-fluid proImg'>").attr("src",fanFriend.photo);
+            img.attr("alt","image "+fanFriend.name);
+            fan.append(title,name,img);
+            body.append(character,fan);          
+            clearFields();
+          });
+
+          function clearFields(){
+              $("#name").val("");
+              $("#photo").val("");
+              for(var i =1; i<=10; i++){
+                $("#q"+i).val("default");
+              }
+          }
+      }
   });
 
 </script>

@@ -18,23 +18,22 @@ module.exports = (function(app) {
          var friend = findMatch(friends, currentUser);
          var tvFriend = findMatch(tvFriends, currentUser);
          var friendArray = [tvFriend, friend];
-          friends.push(newFriend);
-          res.json(friendArray);
+         friends.push(newFriend);
+         res.json(friendArray);
       });
     
 });
+
+
 function findMatch(frnd, currentUser){
     var minDiff = 100;
     var minIndex = -1;
-    console.log("me:"+currentUser);
     for(var i = 0; i<frnd.length; i++){
         var totalDiff = 0;
         var otherUser = frnd[i].scores;
-        console.log("other:"+otherUser);
         for(var j = 0; j<otherUser.length; j++){
             totalDiff+=Math.abs(otherUser[j]-currentUser[j]);
         }
-        console.log(totalDiff);
         if(totalDiff < minDiff){
             minDiff = totalDiff;
             minIndex = i;

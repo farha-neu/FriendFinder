@@ -1,6 +1,6 @@
 var tvFriends = [{
     "name":"Monica Geller",
-    "photo":"https://pbs.twimg.com/profile_images/459181888067092480/4UU06Zxj.jpeg",
+    "photo":"https://shegotofftheplane.weebly.com/uploads/5/8/8/1/58817427/9847352.png",
     "scores":[
         2,
         1,

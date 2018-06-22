@@ -50,12 +50,52 @@ label{
 }
 
 .api{
-    color: white;
+    color: lemonchiffon;
 }
 .api:hover{
     color:white;
 }
 
 .modal-dialog{
-    max-width: 650px;
+    max-width: 550px;
+}
+
+.title{
+    font-size: 23px;
+    font-family: 'Acme', sans-serif;   
+}
+.titlefan{
+    margin-top:10px;
+}
+.name{
+    font-size: 26px;
+    font-family: 'Courgette', cursive;
+    color: rgb(75,0,130);
+}
+
+form h5{
+    font-family: 'Acme', sans-serif;  
+    font-size:27px;
+    color: indigo;
+}
+
+.submit{
+    background: indigo;
+    color: white;
+}
+
+.submit:hover{
+    background: purple;
+}
+
+.proImg{
+    max-width:300px;
+}
+
+.title,.name{
+    margin-bottom: 0px;
+}
+
+.fa-home:hover{
+    color: orange;
 }
