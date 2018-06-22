@@ -63,7 +63,7 @@ var tvFriends = [{
       ]
   },
   {
-    "name":"Phoebe buffay",
+    "name":"Phoebe Buffay",
     "photo":"https://i.pinimg.com/originals/4a/b6/c2/4ab6c2362e2e32866b8f1094175e246d.jpg",
     "scores":[
         1,
