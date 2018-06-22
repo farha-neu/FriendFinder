@@ -77,6 +77,22 @@ var tvFriends = [{
         5,
         1
       ]
+  },
+  {
+    "name":"Ross Geller",
+    "photo":"https://78.media.tumblr.com/98e941055a72a64c8e258b5e3ce9c192/tumblr_nj0d5cuWq01smcbm7o1_250.gif",
+    "scores":[
+        3,
+        5,
+        4,
+        2,
+        5,
+        4,
+        3,
+        2,
+        3,
+        1
+      ]
   }
 ];
 
