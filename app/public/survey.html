@@ -195,7 +195,7 @@
                  <!--modal content-->
               </div>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary button-close">Close</button>
               </div>
             </div>
           </div>
@@ -275,6 +275,11 @@
                 $("#q"+i).val("default");
               }
           }
+
+          $(".button-close").on("click", function(){
+            location.reload();
+            $(this).attr("data-dismiss","modal");
+          });
       }
   });
 
