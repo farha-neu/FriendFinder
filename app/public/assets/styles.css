@@ -6,7 +6,9 @@ body.home{
 }
 
 body.survey{
-    /* background-image: url("http://images2.fanpop.com/image/photos/11800000/Drawing-friends-11849911-1100-785.jpg"); */
+     background-image: url("images/bg.png"); 
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 label{
@@ -37,6 +39,23 @@ label{
 
 .card{
     margin-top:20px;
+    margin-bottom:20px;
    
 }
 
+.tag{
+    margin:0 auto;
+    color: white;
+    font-size: 30px;
+}
+
+.api{
+    color: white;
+}
+.api:hover{
+    color:white;
+}
+
+.modal-dialog{
+    max-width: 650px;
+}
