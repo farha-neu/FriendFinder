@@ -6,9 +6,7 @@ body.home{
 }
 
 body.survey{
-     background-image: url("images/bg.png"); 
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-image: url("images/bg.jpg"); 
 }
 
 label{
@@ -98,4 +96,8 @@ form h5{
 
 .fa-home:hover{
     color: orange;
+}
+
+.form-control{
+    border:2px groove grey;
 }
