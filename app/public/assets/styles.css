@@ -38,7 +38,12 @@ label{
 .card{
     margin-top:20px;
     margin-bottom:20px;
+    background-color: rgba(245,245,245,0.9)
    
+}
+
+.modal-content{
+    background-color: whitesmoke;
 }
 
 .tag{
@@ -62,9 +67,7 @@ label{
     font-size: 23px;
     font-family: 'Acme', sans-serif;   
 }
-.titlefan{
-    margin-top:10px;
-}
+
 .name{
     font-size: 26px;
     font-family: 'Courgette', cursive;
